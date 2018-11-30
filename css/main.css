@@ -1,0 +1,82 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+
+
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img{
+  display: inline;
+}
+
+@media only screen and (min-width: 20em) {
+
+img{
+  width: 100%;
+}
+img:nth-child(2){
+  display: none;
+}
+
+img:nth-child(4){
+  display: none;
+}
+
+}
+
+
+
+@media only screen and (min-width: 25em) {
+img, img:first-child{
+  display: inline-block;
+  width: 49%;
+}
+
+img:nth-child(even) {
+  display: inline-block;
+}
+
+
+}
+@media only screen and (min-width: 38em) {
+  img {
+    width: 32%;
+  }
+  img:first-child {
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 60em) {
+  body {
+    left: 2%;
+    transform: translate(2%);
+  }
+  img, img:first-child{
+    display: inline-block;
+    width: 24%;
+  }
+
+
+}
+@media only screen and (min-width: 90em) {
+
+  body {
+  margin-left: 3px;
+  }
+
+}
